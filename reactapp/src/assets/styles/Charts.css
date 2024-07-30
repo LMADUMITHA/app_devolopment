@@ -1,0 +1,120 @@
+/* Chart.css */
+
+/* COLORS */
+:root {
+    --b: #5aa8e8;
+    --b-rgba: rgba(108,90,232,0.25);
+    --b-skills: #5E95E8;
+    --w: #fff;
+  }
+  
+  /* TRANSITIONS */
+  @keyframes skills {
+    0% {
+      left: -500px;
+      opacity: 0;
+    }
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+  
+  .skills {
+    animation: skills 1.25s cubic-bezier(.17,.67,0,1);
+  }
+  
+  html {
+    font-size: 100%;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background: var(--b);
+  }
+  
+  html, body, main {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section {
+    background: var(--b);
+    position: relative;
+  }
+  
+  article.skills {
+    width: 500px;
+    height: auto;
+  }
+  
+  article.skills p {
+    z-index: 2;
+    color: var(--w);
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  article.skills div {
+    position: relative;
+  }
+  
+  article.skills span:nth-child(1) {
+    z-index: -2;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    background: var(--w);
+    height: 100%;
+    width: 100%;
+  }
+  
+  article.skills span:nth-child(2) {
+    z-index: -1;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background: var(--b-skills);
+    height: 100%;
+  }
+  
+  /* Skill Bars */
+  article.skills div:nth-child(1) span:nth-child(2) { width: 90%; animation-delay: 0; }
+  article.skills div:nth-child(2) span:nth-child(2) { width: 90%; animation-delay: 0.05s; }
+  article.skills div:nth-child(3) span:nth-child(2) { width: 80%; animation-delay: 0.1s; }
+  article.skills div:nth-child(4) span:nth-child(2) { width: 70%; animation-delay: 0.15s; }
+  article.skills div:nth-child(5) span:nth-child(2) { width: 75%; animation-delay: 0.2s; }
+  article.skills div:nth-child(6) span:nth-child(2) { width: 60%; animation-delay: 0.25s; }
+  article.skills div:nth-child(7) span:nth-child(2) { width: 80%; animation-delay: 0.3s; }
+  article.skills div:nth-child(8) span:nth-child(2) { width: 75%; animation-delay: 0.35s; }
+  
+  section:before,
+  section:after {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    content: '';
+    background: var(--b-rgba);
+    transform: rotate(30deg);
+  }
+  
+  section:before {
+    top: -250px; left: -350px;
+  }
+  
+  section:after {
+    bottom: -250px; right: -350px;
+  }
+  

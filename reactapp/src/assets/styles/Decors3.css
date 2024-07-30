@@ -1,0 +1,79 @@
+.reviews-section {
+    padding-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  .reviews-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .review-card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  
+  .rating-value[rating-value="1"] { --star-rev: 1; }
+  .rating-value[rating-value="2"] { --star-rev: 2; }
+  .rating-value[rating-value="3"] { --star-rev: 3; }
+  .rating-value[rating-value="4"] { --star-rev: 4; }
+  .rating-value[rating-value="5"] { --star-rev: 5; }
+  
+  .rating-value {
+    --_star-size: 1.4rem;
+    --_gap: 0.2rem;
+  
+    --gap-max-size: min(var(--_gap), var(--_star-size) / 5);
+    --gap-calc: calc( (var(--star-rev, 0) - 1) * var(--gap-max-size) );
+  
+    height: var(--_star-size);
+    width: calc(var(--star-rev, 0) * var(--_star-size) + var(--gap-calc));
+    background-image: 
+      url(https://api.iconify.design/material-symbols:star-rounded.svg?color=%23f0ad4e);
+    background-repeat: space no-repeat;
+    background-size: var(--_star-size);
+  }
+  
+  .reviewer-text {
+    font-size: 1.225rem;
+    margin: 1rem 0;
+  }
+  
+  .reviewer-name {
+    font-size: 1rem;
+    color: #989898;
+  }
+  
+  /* Reset CSS */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: yellow;
+  }
+  
+  body {
+    min-height: 100vh;
+  }
+  

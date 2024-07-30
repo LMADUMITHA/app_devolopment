@@ -1,0 +1,65 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+ 
+  .home-container {
+    position: relative;
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+  }
+  
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    z-index: -1; 
+  }
+  .background-video .txt {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center properly */
+    color: rgb(224, 165, 16); /* Ensure the text is visible */
+    font-size: 8rem; /* Example font size */
+    z-index: 1; /* Ensure the text is above the video */
+  }
+  
+ 
+  .background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
+    
+    margin: 0; 
+    padding: 0; 
+    border: 0;
+  }
+  
+ 
+  .content {
+    position: relative;
+    z-index: 1; 
+    color: white; 
+    text-align: center;
+    padding: 20px;
+    
+
+  }
+
+ 
+  
+
+

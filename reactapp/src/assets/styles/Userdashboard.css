@@ -1,0 +1,12 @@
+/* h1 {
+    display: none;
+} */
+/* Keep the existing rule */
+h1 {
+    display: none;
+}
+
+/* Override for Userdashboard */
+.user-dashboard h1 {
+    display: block; /* or another display value like inline, inline-block */
+}

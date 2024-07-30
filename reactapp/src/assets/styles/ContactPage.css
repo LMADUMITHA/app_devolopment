@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e3ee;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./gold.jpg');
+  background-size: cover;
+}
+
+.booking-form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  background-color: rgba(190, 154, 53, 0.762); /* Light yellowish tint with transparency */
+  border-radius: 10px;
+  backdrop-filter: blur(5px) brightness(0.9); /* Glassmorphism effect with slight brightness */
+  border: 2px solid rgba(255, 255, 204, 0.6); /* Light yellowish border */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Golden glow around the box */
+  text-align: center;
+  transition: transform 1s ease; /* Adjust transition duration if needed */
+  z-index: 1; /* Ensure the form stays above the images */
+  margin: 20px auto;
+}
+
+.booking-form-container h2 {
+  margin-top: 0;
+  color: #e9e3e6; /* Base text color */
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0 0 5px #FFD700, /* Outer glow */
+               0 0 10px #FFD700, /* Outer glow */
+               0 0 15px #FFD700, /* Outer glow */
+               0 0 20px #FFD700, /* Outer glow */
+               0 0 25px #FFD700; /* Outer glow */
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field input,
+.input-field select,
+.input-field textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #ddd;
+  /* box-shadow: 0 0 5px #FFD700, 
+              0 0 10px #FFD700, 
+              0 0 15px #FFD700;  */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.input-field input:focus,
+.input-field select:focus,
+.input-field textarea:focus {
+  outline: none;
+  /* box-shadow: 0 0 10px #FFD700,
+              0 0 20px #FFD700, 
+              0 0 30px #FFD700;  */
+}
+
+.input-field textarea {
+  height: 100px;
+  resize: none;
+}
+
+.booking-form button {
+  background-color: #eed029cd; /* Golden color for the button */
+  color: #080710; /* Dark text color for contrast */
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* box-shadow: 0 0 10px #d2bc41, 
+              0 0 20px #d2bc41, 
+              0 0 30px #d2bc41;  */
+}
+
+.booking-form button:hover {
+  background-color: #aa8d39; /* Slightly lighter golden color on hover */
+  box-shadow: 0 0 15px #aa8d39, /* Enhanced golden glow on hover */
+              0 0 25px #aa8d39, /* Enhanced golden glow on hover */
+              0 0 35px #aa8d39; /* Enhanced golden glow on hover */
+}

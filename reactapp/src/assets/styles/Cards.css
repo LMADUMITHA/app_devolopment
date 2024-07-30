@@ -1,0 +1,106 @@
+/* 
+
+.ag-format-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.ag-courses_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.ag-courses_item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  transition: transform 0.2s;
+}
+
+.ag-courses_item:hover {
+  transform: translateY(-5px);
+}
+
+.ag-courses-item_link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+
+.ag-courses-item_bg {
+  background-color: #f4f4f4;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.ag-courses-item_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ag-courses-item_date-box {
+  font-size: 14px;
+  color: gray;
+}
+
+.ag-courses-item_date {
+  font-weight: 500;
+  margin-left: 5px;
+} */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 215, 0, 0.5); /* Add glowing effect */
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.7); /* Enhanced glowing effect on hover */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-info-button {
+  background-color: #eed029cd; /* Golden color for the button */
+  color: #080710; /* Dark text color for contrast */
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px #d2bc41, 0 0 20px #d2bc41; /* Golden glow around the button */
+}
+
+.card-info-button:hover {
+  background-color: #aa8d39; /* Slightly lighter golden color on hover */
+  box-shadow: 0 0 15px #aa8d39, 0 0 25px #aa8d39; /* Enhanced golden glow on hover */
+}

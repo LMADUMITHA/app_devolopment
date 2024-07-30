@@ -1,0 +1,517 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e3ee;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./pexels-evie-shaffer-1259279-2395249.jpg'); 
+    background-size: cover;
+}
+
+.login-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: relative; 
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    text-align: center;
+}
+.btn{
+    color:#920649;
+}
+.login-form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 30px;
+    color:#920649
+}
+
+.login-form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-form input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(242, 235, 235, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.login-form input::placeholder {
+    color: #0d0101;
+}
+
+.login-form button {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #920649;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-form button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login-form .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.login-form .message {
+    color: black;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.login-form p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+.login-form p a {
+    color: #23a2f6;
+    text-decoration: none;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+} */
+
+/* src/assets/styles/Login.css */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e3ee;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./grand.jpg'); 
+  background-size: cover;
+}
+
+.register-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: relative; 
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  text-align: center;
+}
+
+.register-form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 30px;
+  color: #920649;
+}
+
+.register-form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(242, 235, 235, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.register-form input::placeholder {
+  color: #0d0101;
+}
+
+.register-form button {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #920649;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-form button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.register-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.register-form .message {
+  color: black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.register-form p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
+
+.register-form p a {
+  color: #23a2f6;
+  text-decoration: none;
+}
+
+.register-form p a:hover {
+  text-decoration: underline;
+} */
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e3ee;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./grand.jpg');
+  background-size: cover;
+}
+
+.login-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+  text-align: center;
+  transition: transform 1s ease; 
+  z-index: 1; 
+}
+
+.bride-groom {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s ease; 
+  width: 500px; 
+  height: auto;
+}
+
+.bride-groom-left {
+  left: -250px; 
+}
+
+.bride-groom-left.visible {
+  left: 20px; 
+  opacity: 1;
+}
+
+.bride-groom-right {
+  right: -250px; 
+}
+
+.bride-groom-right.visible {
+  right: 20px; 
+  opacity: 1;
+}
+
+.login-form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 30px;
+  color: #920649;
+}
+
+.login-form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(242, 235, 235, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.login-form input::placeholder {
+  color: #0d0101;
+}
+
+.login-form button {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #920649;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.login-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.login-form .message {
+  color: black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-form p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
+
+.login-form p a {
+  color: #23a2f6;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e4e3ee;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./gold.jpg');
+  background-size: cover;
+}
+
+.login-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .login-form {
+    height: 520px;
+    width: 400px;
+    background-color: rgba(190, 154, 53, 0.762); /* Light yellowish tint with transparency */
+    border-radius: 10px;
+    backdrop-filter: blur(5px) brightness(0.9); /* Glassmorphism effect with slight brightness */
+    border: 2px solid rgba(255, 255, 204, 0.6); /* Light yellowish border */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Golden glow around the box */
+    padding: 50px 35px;
+    text-align: center;
+    transition: transform 1s ease; /* Adjust transition duration if needed */
+    z-index: 1; /* Ensure the form stays above the images */
+  }
+  
+  
+.bride-groom {
+  position: absolute;
+  opacity: 0;
+  transition: all 2s ease; 
+  width: 400px; 
+  height: auto;
+}
+
+.bride-groom-left {
+  left: -250px; 
+}
+
+.bride-groom-left.visible {
+  left: 20px; 
+  opacity: 1;
+}
+
+.bride-groom-right {
+  right: -250px; 
+}
+
+.bride-groom-right.visible {
+  right: 20px; 
+  opacity: 1;
+}
+  
+
+
+
+.login-form h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 42px;
+    margin-bottom: 30px;
+    color: #e9e3e6; /* Base text color */
+    text-shadow: 0 0 5px #FFD700, /* Outer glow */
+                 0 0 10px #FFD700, /* Outer glow */
+                 0 0 15px #FFD700, /* Outer glow */
+                 0 0 20px #FFD700, /* Outer glow */
+                 0 0 25px #FFD700; /* Outer glow */
+  }
+
+.login-form input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(242, 235, 235, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    box-shadow: 0 0 5px #FFD700, /* Golden glow */
+                0 0 10px #FFD700, /* Golden glow */
+                0 0 15px #FFD700; /* Golden glow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #FFD700, /* Enhanced golden glow on focus */
+                0 0 20px #FFD700, /* Enhanced golden glow on focus */
+                0 0 30px #FFD700; /* Enhanced golden glow on focus */
+  }
+  
+
+.login-form input::placeholder {
+  color: #0d0101;
+}
+
+.login-form button {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #eed029cd; /* Golden color for the button */
+    color: #080710; /* Dark text color for contrast */
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #d2bc41, /* Golden glow */
+                0 0 20px #d2bc41, /* Golden glow */
+                0 0 30px #d2bc41; /* Golden glow */
+  }
+  
+  .login-form button:hover {
+    background-color: #aa8d39; 
+    box-shadow: 0 0 15px #aa8d39, 
+                0 0 25px #aa8d39, 
+                0 0 35px #aa8d39; 
+  }
+  
+
+.login-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.login-form .message {
+  color: black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-form p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
+
+.login-form p a {
+  color: #23a2f6;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}

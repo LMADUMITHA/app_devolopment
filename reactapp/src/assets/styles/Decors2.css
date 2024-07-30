@@ -1,0 +1,121 @@
+/* .about-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+  }
+  
+  .about-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(215, 168, 47); 
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 2em;
+  }
+  
+  .about-text {
+    color: white;
+    flex-grow: 1;
+  }
+  
+  .about-text h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+  }
+  
+  .about-text p {
+    margin-bottom: 1em;
+  }
+  
+  .image-credit {
+    font-size: 0.8em;
+  }
+  
+  .read-more-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .read-more-button:hover {
+    background-color: white;
+    color: #0046ff;
+  }
+   */
+
+   .about-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+    margin-left: 220px;
+  }
+  
+  .about-content {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(215, 168, 47); 
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     
+  }
+  
+  .about-image img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 2em;
+  }
+  
+  .about-text {
+    color: white;
+    flex-grow: 1;
+  }
+  
+  .about-text h2 {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+  }
+  
+  .about-text p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+  }
+  
+  .read-more-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .read-more-button:hover {
+    background-color: white;
+    color: #0046ff;
+  }
+  

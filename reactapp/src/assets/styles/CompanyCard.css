@@ -1,0 +1,56 @@
+/* CompanyCard.css */
+.company-card {
+    background-color: rgba(190, 154, 53, 0.762); /* Light yellowish tint with transparency */
+    border: 2px solid rgba(255, 255, 204, 0.6); /* Light yellowish border */
+    border-radius: 10px;
+    backdrop-filter: blur(5px) brightness(0.9); /* Glassmorphism effect with slight brightness */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Golden glow around the box */
+    padding: 16px;
+    margin: 16px; /* Add margin to create space between cards */
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease; /* Adjust transition duration if needed */
+  }
+  
+  .company-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .company-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .company-card-title {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .company-card-links {
+    margin-top: auto;
+  }
+  
+  .company-card-link {
+    margin-right: 8px;
+    text-decoration: none;
+    color: #e37d10;
+  }
+  
+  .company-card-button-link {
+    text-decoration: none;
+  }
+  
+  .company-card-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #371e04;
+    color: white;
+    cursor: pointer;
+  }
+  

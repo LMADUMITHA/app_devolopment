@@ -1,0 +1,42 @@
+/* CreateEvent.css */
+
+.create-event-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.create-event-container h1 {
+    text-align: center;
+}
+
+.create-event-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-event-container label {
+    margin: 10px 0 5px;
+}
+
+.create-event-container input,
+.create-event-container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.create-event-container button {
+    padding: 10px;
+    background-color: #f87b0d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-event-container button:hover {
+    background-color: #e06c00;
+}

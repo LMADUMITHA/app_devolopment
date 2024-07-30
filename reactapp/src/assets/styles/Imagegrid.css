@@ -1,0 +1,62 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 2vw;
+  }
+  
+  .grid-container {
+    border: solid 1px #eeeeee; /* for debugging display */
+    padding: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 24.5vw;
+    grid-gap: 0.5vw; /* optional gutter, use "vw" instead of "px" to keep proportions responsive */
+  }
+  
+  .griditem {
+    background-size: cover;
+    background-position: center;
+    padding: 2vw;
+    font-size: 1.5vw; /* text overlay */
+    color: rgb(83, 16, 16);
+    box-sizing: border-box;
+  }
+  
+  .griditem:hover {
+    cursor: pointer;
+    filter: brightness(70%) grayscale(100%);
+  }
+  
+  .image1 {
+    background-position: left center;
+    background-image: url("https://t4.ftcdn.net/jpg/08/72/91/53/240_F_872915388_Ig7UeayK1V5wvwTHFsz7eAtt2BU3fFfw.jpg");
+  }
+  
+  .image2 {
+    background-image: url("https://images.pexels.com/photos/16364491/pexels-photo-16364491/free-photo-of-women-in-traditional-dresses-dancing-on-ceremony.jpeg?auto=compress&cs=tinysrgb&w=600");
+  }
+  
+  .image3 {
+    background-image: url("https://images.pexels.com/photos/19734109/pexels-photo-19734109/free-photo-of-indian-wedding-couple-in-front-of-a-tree.jpeg?auto=compress&cs=tinysrgb&w=600");
+  }
+  
+  .image4 {
+    background-position: top center;
+    background-image: url("https://images.pexels.com/photos/5759215/pexels-photo-5759215.jpeg?auto=compress&cs=tinysrgb&w=600");
+  }
+  
+  .image5 {
+    background-image: url("https://images.pexels.com/photos/7600387/pexels-photo-7600387.jpeg?auto=compress&cs=tinysrgb&w=600");
+  }
+  
+  .image6 {
+    background-image: url("https://t4.ftcdn.net/jpg/08/72/91/53/240_F_872915388_Ig7UeayK1V5wvwTHFsz7eAtt2BU3fFfw.jpg");
+  }
+  
+  .image7 {
+    background-image: url("https://i.pinimg.com/564x/2a/ad/2a/2aad2a9d97369bf090c33f857c217b72.jpg");
+  }
+  
+  .image8 {
+    background-image: url("https://bangalorephotographers.in/images/gallery/4040ee5e00acf4234c7c48198fb63166.jpg");
+  }
+  

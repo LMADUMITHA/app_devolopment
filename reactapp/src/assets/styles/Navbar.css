@@ -1,0 +1,161 @@
+/* assets/styles/Navbar.css */
+
+/* nav {
+    background-color: #920649;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ddd;
+} */
+
+
+/*
+nav {
+    background: linear-gradient(90deg, #ffb700eb, #d7ac3c); 
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ddd;
+}
+*/
+
+
+
+
+
+
+
+/* 
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%;
+    background: linear-gradient(90deg, #ffb700eb, #d7ac3c); 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+    z-index: 1000; 
+    margin: 0; 
+}
+
+
+nav::before {
+    content: none; 
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ddd;
+} */
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ffb700eb, #d7ac3c);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px !important; /* Force the height to be 30px */
+    width: auto !important; /* Maintain aspect ratio */
+    margin-right: 90px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ddd;
+}

@@ -1,0 +1,117 @@
+/* .description-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh; 
+    background-color: #e4e3ee;
+    background-image: url('gold.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding-top: 0; 
+    margin-top: 0;
+  }
+  
+  .content {
+    position: relative; 
+  }
+  
+  .cartoon-image {
+    position: absolute;
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%);
+    width: 150px; 
+    height: auto;
+  }
+  
+  .black {
+    background-image: url('Black.jpg');
+    background-size: cover;
+    padding: 150px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.6);
+    animation: glowing 1.5s infinite alternate;
+    color: white;
+    width: 100%; 
+    height: 100%; 
+  }
+  
+  .glow-text {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    
+  }
+  
+  @keyframes glowing {
+    from {
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.6);
+    }
+  }
+   */
+
+   .description-container {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center align all items */
+    min-height: 100vh; /* Ensure container covers full height */
+    background-color: #e4e3ee;
+    background-image: url('gold.jpg'); /* Update this path to your actual image path */
+    background-size: cover;
+    background-position: center;
+    padding-top: 0; /* Remove padding */
+    margin-top: 0; /* Remove any margin */
+}
+
+.content {
+    position: relative; /* Make the content position relative to place the image absolutely */
+}
+
+.cartoon-image {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 20px; /* Adjust the left value as needed */
+    transform: translateY(-50%); /* Center vertically */
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.black {
+    background-image: url('Black.jpg');
+    background-size: cover; /* Ensure image covers the container */
+    padding: 150px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.6);
+    animation: glowing 1.5s infinite alternate;
+    color: white; /* Ensure text color is white for readability */
+    width: 100%; /* Ensure the box takes full width */
+    height: 100%; /* Adjust height automatically */
+}
+
+.additional-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: rgb(96, 111, 74); /* White text color */
+    padding: 20px;
+    margin-top: 20px; /* Space between the black box and additional text */
+    border-radius: 10px;
+    width: 80%; /* Adjust width as needed */
+    text-align: center; /* Center align text */
+}
+
+.glow-text {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.6);
+    }
+}

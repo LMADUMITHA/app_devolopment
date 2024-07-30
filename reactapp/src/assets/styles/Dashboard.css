@@ -1,0 +1,136 @@
+/* Dashboard.css
+
+.dashboard-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.dashboard-header .logout-button {
+    background-color: #920649;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dashboard-header .logout-button:hover {
+    background-color: #7d004f;
+}
+
+.company-details {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.company-details h2 {
+    color: #920649;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.company-details p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.booking-info {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.booking-info h2 {
+    color: #920649;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.booking-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-info li {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.booking-info li:last-child {
+    margin-bottom: 0;
+} */
+/* Dashboard.css */
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh; /* Ensure container covers full height */
+  background-color: #e4e3ee;
+  background-image: url('grand.jpg'); /* Update this path to your actual image path */
+  background-size: cover;
+  background-position: center;
+  padding-top: 0; /* Remove padding */
+  margin-top: 0; /* Remove any margin */
+}
+
+.black {
+  background-image: url('Black.jpg');
+  background-size: contain; /* Ensure the image maintains its aspect ratio */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  width: 100%; /* Ensure the box takes full width */
+  height: 150vh; /* Increase the height to make the image larger */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.6);
+  animation: glowing 1.5s infinite alternate;
+  color: white; /* Ensure text color is white for readability */
+}
+
+.glow-text {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-shadow: 
+    0 0 5px #FFD700,
+    0 0 10px #FFD700,
+    0 0 15px #FFD700,
+    0 0 20px #FFD700,
+    0 0 25px #FFD700;
+}
+
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3), 0 0 20px rgba(255, 215, 0, 0.4);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.6);
+  }
+}

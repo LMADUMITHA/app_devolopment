@@ -1,0 +1,38 @@
+.enquiry-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-top: 20px;
+  }
+  
+  .enquiry-form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .enquiry-form-container input,
+  .enquiry-form-container select,
+  .enquiry-form-container button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .enquiry-form-container button {
+    background-color: #00b4cf;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .enquiry-form-container .message {
+    color: green;
+    margin-top: 10px;
+  }
+  
