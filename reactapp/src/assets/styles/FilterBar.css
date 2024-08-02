@@ -1,0 +1,22 @@
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: #d69abd;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+}
+
+.filter-group select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}

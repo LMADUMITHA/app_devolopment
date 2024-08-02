@@ -6,9 +6,9 @@ function Newbar2() {
     <div>
       <div className="sidebar">
         <a className="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#news">My bookings</a>
+        <a href="#contact">Edit my profile</a>
+        
       </div>
       <div className="content">
         <h2>Responsive Sidebar Example</h2>

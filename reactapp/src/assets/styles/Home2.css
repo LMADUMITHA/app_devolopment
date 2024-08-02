@@ -1,4 +1,4 @@
-
+/* 
 html, body {
     margin: 0;
     padding: 0;
@@ -26,12 +26,12 @@ html, body {
   }
   .background-video .txt {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to center properly */
-    color: rgb(224, 165, 16); /* Ensure the text is visible */
-    font-size: 8rem; /* Example font size */
-    z-index: 1; /* Ensure the text is above the video */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(224, 165, 16); 
+    font-size: 8rem; 
+    z-index: 1; 
   }
   
  
@@ -62,4 +62,80 @@ html, body {
  
   
 
+ */@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Trirong:wght@700&display=swap'); /* Import the fonts */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.home-container {
+  position: relative;
+  height: 100vh; 
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden; 
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  z-index: -1; 
+}
+
+.background-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; 
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+}
+
+.background-image .txt, .background-image .txtt {
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1; 
+  animation: moveUp 3s ease-out forwards; /* Animation for moving the text */
+}
+
+.background-image .txt {
+  bottom: 10%; /* Start from the bottom */
+  color: #1e0d18; /* Pink color */
+  font-size: 8rem; /* Example font size */
+  font-weight: bold;
+  font-family: "Trirong", serif; /* Stylish font similar to the image */
+}
+
+.background-image .txtt {
+  bottom: 5%; /* Start from the bottom */
+  color: #1d0f1f; /* White color */
+  font-size: 3rem; /* Example font size */
+  font-family: "Trirong", serif; /* Stylish font similar to the image */
+}
+
+@keyframes moveUp {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 40%; /* Adjust this value to move the text lower */
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1; 
+  color: white; 
+  text-align: center;
+  padding: 20px;
+}

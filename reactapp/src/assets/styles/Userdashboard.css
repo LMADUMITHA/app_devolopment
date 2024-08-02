@@ -2,9 +2,9 @@
     display: none;
 } */
 /* Keep the existing rule */
-h1 {
+/* h1 {
     display: none;
-}
+} */
 
 /* Override for Userdashboard */
 .user-dashboard h1 {

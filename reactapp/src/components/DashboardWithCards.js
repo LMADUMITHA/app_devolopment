@@ -1,61 +1,73 @@
-// src/components/DashboardWithCards.js
+
+
 // import React from 'react';
-// import Sidebar from './Sidebar';
+// import Newbar from './Newbar';
 // import Cards from './Cards';
-// import '../assets/styles/Dashboard.css'; 
-// function DashboardWithCards() {
+// import TableComponent from './TableComponent';
+// import '../assets/styles/DashboardWithCards.css';
+
+// const DashboardWithCards = () => {
 //   return (
 //     <div className="dashboard-container">
-//       <Sidebar />
+//       <Newbar />
 //       <main className="main-content">
-//        <Cards />
+//         <div className="cards-section">
+//           <Cards />
+//         </div>
+//         <div className="table-section">
+//           <TableComponent />
+//         </div>
 //       </main>
 //     </div>
 //   );
-// }
-// export default DashboardWithCards;
-// import React from 'react';
+// };
 
+// export default DashboardWithCards;
+
+
+
+// import React from 'react';
+// import Newbar from './Newbar';
 // import Cards from './Cards';
 // import TableComponent from './TableComponent';
-// import '../assets/styles/Dashboard.css';
-// import Newbar from './Newbar';
+// import '../assets/styles/DashboardWithCards.css';
 
-// function DashboardWithCards() {
+// const DashboardWithCards = ({ companyName }) => {
 //   return (
-    
-//     <div>
-//     <Newbar />
-//        <main className="main-content">
-//          <div className="cards-section">
-//            <Cards />
-//          </div>
-//          <div className="table-section">
-//            <TableComponent />
-//          </div>
-//        </main>
-
+//     <div className="dashboard-container">
+//       <Newbar />
+//       <main className="main-content">
+//         <h1>{companyName} Dashboard</h1> {/* Display company name here */}
+//         <div className="cards-section">
+//           <Cards />
+//         </div>
+//         <div className="table-section">
+//           <TableComponent />
+//         </div>
+//       </main>
 //     </div>
-    
-    
 //   );
-// }
+// };
 
 // export default DashboardWithCards;
-
 
 
 import React from 'react';
 import Newbar from './Newbar';
 import Cards from './Cards';
 import TableComponent from './TableComponent';
-// import '../assets/styles/Dashboard.css';
 import '../assets/styles/DashboardWithCards.css';
-const DashboardWithCards = () => {
+
+const DashboardWithCards = ({ companyName }) => {
+  console.log("Company Name:", companyName); // Debugging line
+
   return (
     <div className="dashboard-container">
+      
       <Newbar />
+      
       <main className="main-content">
+      <h1 className="company-name">{companyName} Dashboard</h1>
         <div className="cards-section">
           <Cards />
         </div>

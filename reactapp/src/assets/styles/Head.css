@@ -1,0 +1,48 @@
+
+
+.head {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.head:hover {
+  transform: scale(1.05);
+}
+
+.head-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  font-size: 26px;
+  margin-bottom: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3b1c2e;
+}
+
+.card-text {
+  color: #3b1c2e;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-rating {
+  display: flex;
+}
+

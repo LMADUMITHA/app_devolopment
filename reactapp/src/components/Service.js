@@ -212,12 +212,13 @@
 // export default Service;
 
 import Company from "./Company";
-import HorizontalCarousel from "./HorizontalCarousel ";
+import Display from "./Display";
+
 function Service(){
   return(
     <div>
       <Company />
-      
+      <Display />
     </div>
   )
 }
