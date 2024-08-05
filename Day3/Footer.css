@@ -1,0 +1,39 @@
+.footer {
+  background:#3b1c2e; /* Dark blue background */
+  color: #fff; /* White text color */
+  padding: 20px 0;
+  text-align: center;
+  height: 200px;
+  margin-top: 20px; /* Space between footer and previous content */
+}
+
+.footer-links,
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between links */
+  margin-bottom: 15px; /* Space between links and disclaimer */
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px; /* Size of the text */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  padding-top: 30px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #6c63ff; /* Light purple color on hover */
+}
+
+.footer-social a {
+  font-size: 26px; /* Size of the social media icons */
+}
+
+.footer-disclaimer {
+  font-size: 16px; /* Size of the disclaimer text */
+  padding-top: 20px;
+}
