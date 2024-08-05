@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e4e3ee; /* Default background color for other pages */
+}
+
+.login-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./leaf.png'); /* Background image specific to the Login page */
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(210, 87, 184, 0.2); /* Slightly opaque background for glassmorphism */
+  border-radius: 10px;
+  backdrop-filter: blur(20px); /* Glassmorphism effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border to enhance the glass effect */
+  padding: 50px 35px;
+  text-align: center;
+  border: 2px solid #852153;
+  z-index: 2; /* Ensure the form stays above other elements */
+  position: relative; /* Ensure z-index is effective */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form > h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 30px;
+  color: #852153; /* Base text color */
+  z-index: 3; /* Ensure the h1 tag stays on top of other elements */
+  position: relative; /* Ensure z-index is effective */
+}
+
+.login-form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(242, 235, 235, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #0d0101;
+}
+
+.login-form button {
+  margin-top: 40px;
+  width: 100%;
+  background-color: #852153; /* Button color */
+  color: #080710; /* Text color for contrast */
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #aa8d39; /* Button hover color */
+}
+
+.login-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.login-form .message {
+  color: black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-form p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
+
+.login-form p a {
+  color: #23a2f6;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}

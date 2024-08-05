@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e4e3ee; /* Default background color for other pages */
+}
+
+.register-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./leaf.png'); /* Background image specific to the Register page */
+  background-size: cover;
+  background-position: center;
+  padding-top: 90px; /* Adjust this value to fit below the navbar */
+}
+
+
+.register-form {
+  height: 700px;
+  width: 400px;
+  background-color: rgba(210, 87, 184, 0.2); /* Slightly opaque background for glassmorphism */
+  border-radius: 10px;
+  backdrop-filter: blur(20px); /* Glassmorphism effect */
+  border: 2px solid #852153; /* Border color and thickness */
+  padding: 50px 35px;
+  text-align: center;
+  z-index: 2; /* Ensure the form stays above other elements */
+  position: relative; /* Ensure z-index is effective */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-form h2 {
+  font-size: 50px; /* Match font size of the login form */
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 30px;
+  color: #852153; /* Base text color */
+}
+
+.register-form label {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.register-form input {
+  display: block;
+  height: 50px;
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  background-color: rgba(242, 235, 235, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Similar to the Login box */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.register-form input:focus {
+  border-color: #300e25; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.register-form input::placeholder {
+  color: #0d0101;
+}
+
+.register-form button {
+  margin-top: 40px;
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  background-color: #852153; /* Golden color for the button */
+  color: #080710; /* Dark text color for contrast */
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.register-form button:hover {
+  background-color: #aa8d39; /* Slightly lighter golden color on hover */
+}
+
+.register-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.register-form .message {
+  color: black;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.register-form p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+  text-align: center; /* Center text */
+}
+
+.register-form p a {
+  color: #23a2f6;
+  text-decoration: none;
+}
+
+.register-form p a:hover {
+  text-decoration: underline;
+}
