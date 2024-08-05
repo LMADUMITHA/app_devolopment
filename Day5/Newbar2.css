@@ -1,0 +1,95 @@
+/* body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: #eead08;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+   */
+
+
+   /* Newbar2.css */
+
+.newbar2-sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6b1950;
+  padding-top: 20px;
+}
+
+.newbar2-sidebar button {
+  padding: 10px 15px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.newbar2-sidebar button:hover {
+  background-color: #e46dde;
+}
+
+.newbar2-active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.newbar2-content {
+  margin-left: 260px;
+  padding: 20px;
+}
