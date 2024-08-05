@@ -1,0 +1,129 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3b1c2e;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures space between the top and bottom sections */
+}
+
+.sidenav:hover {
+  width: 280px; /* Slightly expand on hover */
+}
+
+/* Logo container */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+/* Admin profile container */
+.admin-profile-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-profile {
+  width: 120px; /* Adjust size as needed */
+  height: 120px; /* Adjust size as needed */
+  border-radius: 60%; /* Makes the profile picture round */
+  border: 2px solid #f4c542; /* Optional: Add a border around the profile picture */
+}
+.admin-profile-label {
+  margin-top: 10px; /* Space between profile picture and label */
+  color: #fafafa; /* Color of the label text */
+  font-size: 16px; /* Font size of the label */
+  font-weight: bold; /* Optional: Makes the label text bold */
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fafafa;
+  display: block;
+  transition: background-color 0.3s, color 0.3s, border-left 0.3s; /* Added transitions for smooth hover effect */
+  border-left: 4px solid transparent; /* Adds a left border */
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  background-color: #57314f;
+  color: #fff;
+  border-left: 4px solid #f4c542; /* Changes border color on hover */
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+  border-left: 4px solid #f4c542;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-container {
+  display: none;
+  background-color: #57314f;
+  padding-left: 16px;
+  transition: max-height 0.3s ease-out;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Logout button styles */
+.logout-btn {
+  margin: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d9534f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center; /* Aligns the button to the center horizontally */
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,101 @@
+/* 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 215, 0, 0.5); 
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.7); 
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-info-button {
+  background-color: #eed029cd;
+  color: #080710; 
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px #d2bc41, 0 0 20px #d2bc41; 
+}
+
+.card-info-button:hover {
+  background-color: #aa8d39; 
+  box-shadow: 0 0 15px #aa8d39, 0 0 25px #aa8d39; 
+} */
+
+
+
+
+.dashboard-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.dashboard-card {
+  background-color: #a44484;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 215, 0, 0.5); /* Add glowing effect */
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.7); /* Enhanced glowing effect on hover */
+}
+
+.dashboard-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dashboard-card-info-button {
+  background-color: #3a0b2a; /* Golden color for the button */
+  color: #f7f6fb; /* Dark text color for contrast */
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px #d2bc41, 0 0 20px #d2bc41; /* Golden glow around the button */
+}
+
+.dashboard-card-info-button:hover {
+  background-color: #aa8d39; /* Slightly lighter golden color on hover */
+  box-shadow: 0 0 15px #aa8d39, 0 0 25px #aa8d39; /* Enhanced golden glow on hover */
+}
